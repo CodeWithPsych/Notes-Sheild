@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  border: 2px solid transparent;
+  margin: 84px 25px 25px 25px;
+  border-radius: 12px;
+  background-color: #1976d252;
+  color: black;
+  max-width: 100vw;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.right {
+  display: flex;
+  padding: 12px;
+  font-size: 20px;
+}
+.left {
+  display: flex;
+  padding: 7px;
+}
+.left span {
+  padding: 8px;
+}
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vw;
+  height: 62vh;
+  gap: 12px;
+  padding: 1px;
+}
+.alert {
+  display: none;
+  justify-content: center;
+  background-color: #ffd7ad;
+  width: 60%;
+  border: 2px solid transparent;
+  align-items: center;
+  height: auto;
+  z-index: 12;
+  gap: 15px;
+}
+.check{
+  display: none;
+  justify-content: center;
+  position: fixed;
+  z-index: 12;
+  top: 70px;
+  width: 100vw;
+}
+.alertBtn {
+  display: flex;
+  gap: 12px;
+}
+/* .footer{
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  font-size: 17px;
+  padding: 12px;
+  width: 100vw;
+
+  color: white;
+  border:2px solid #3e3d3d;
+  background-color: #3e3d3d;
+  z-index: 12;
+  bottom: 0;
+} */
+@media screen and (max-width: 767px) {
+  .left span {
+    display: none;
+  }
+  .alert {
+    flex-direction: column;
+    width: 98%;
+  }
+  .check{
+  
+    top: 50px;
+    width: 100vw;
+  }
+}

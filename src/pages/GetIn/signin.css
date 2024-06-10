@@ -1,0 +1,52 @@
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px;
+  border: 2px solid transparent;
+  background-color: #5456543d;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+}
+
+.avatar {
+  padding: 12px;
+}
+
+.text-field,
+.register-text-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.account {
+  padding: 12px;
+  margin: 12px;
+}
+
+span {
+  padding: 6px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .signin {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 52px;
+    height: 90vh;
+  }
+  .box {
+   margin: 0 15px;
+   box-sizing: border-box;
+  }
+}
